@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  role_name: elastic-apm-agent-php
+  author: Nicolas Boutet
+  description: Install Elastic APM PHP agent.
+  license: MIT
+  min_ansible_version: 2.7
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+    - name: Debian
+      versions:
+        - buster
+        - stretch
+  galaxy_tags:
+    - agent
+    - apm
+    - elastic
+    - php
+dependencies: []

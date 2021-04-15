@@ -1,0 +1,6 @@
+---
+elastic_apm_php_agent_dependencies:
+  - apt-transport-https
+  - gnupg
+
+elastic_apm_php_agent_version: 1.0.1

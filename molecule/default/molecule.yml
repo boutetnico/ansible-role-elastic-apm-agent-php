@@ -1,0 +1,28 @@
+---
+dependency:
+  name: galaxy
+  enabled: False
+
+driver:
+  name: docker
+
+platforms:
+  - name: ansible-role-elastic-apm-agent-php-debian-9
+    image: debian:9
+  - name: ansible-role-elastic-apm-agent-php-debian-10
+    image: debian:10
+  - name: ansible-role-elastic-apm-agent-php-ubuntu-1804
+    image: ubuntu:18.04
+  - name: ansible-role-elastic-apm-agent-php-ubuntu-2004
+    image: ubuntu:20.04
+
+lint: |
+    yamllint .
+    ansible-lint
+    flake8
+
+provisioner:
+  name: ansible
+
+verifier:
+  name: testinfra

@@ -1,0 +1,11 @@
+---
+- name: Install dependencies
+  apt:
+    name: "{{ elastic_apm_php_agent_dependencies }}"
+    state: present
+    update_cache: true
+
+- name: Install Elastic APM PHP agent
+  apt:
+    deb: "https://github.com/elastic/apm-agent-php/releases/download/v{{ elastic_apm_php_agent_version }}/apm-agent-php_{{ elastic_apm_php_agent_version }}_all.deb"
+    state: present
