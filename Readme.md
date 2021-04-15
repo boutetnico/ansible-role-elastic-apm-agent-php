@@ -25,7 +25,7 @@ Role Variables
 | Variable                           | Required | Default                       | Choices | Comments      |
 |------------------------------------|----------|-------------------------------|---------|---------------|
 | elastic_apm_php_agent_dependencies | yes      | `[apt-transport-https,gnupg]` | list    |               |
-| elastic_apm_php_agent_version      | yes      | `1.0.0`                       | string  |               |
+| elastic_apm_php_agent_version      | yes      | `1.0.1`                       | string  |               |
 
 Dependencies
 ------------
