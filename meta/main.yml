@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   role_name: elastic-apm-agent-php
+  namespace: boutetnico
   author: Nicolas Boutet
   description: Install Elastic APM PHP agent.
   license: MIT
