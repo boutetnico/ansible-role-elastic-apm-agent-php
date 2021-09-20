@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: elastic-apm-agent-php
+  role_name: elastic_apm_agent_php
   namespace: boutetnico
   author: Nicolas Boutet
   description: Install Elastic APM PHP agent.
